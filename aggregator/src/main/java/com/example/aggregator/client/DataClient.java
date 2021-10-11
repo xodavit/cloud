@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(value = "data")
+@FeignClient(name = "data", path = "/api")
+//@FeignClient(value = "data")
 public interface DataClient {
   @GetMapping
   ResponseDto getValue();

@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import java.util.LinkedList;
 import java.util.List;
 
-@FeignClient(value = "users")
+//@FeignClient(value = "users")
+@FeignClient(name = "users", path = "/api")
 public interface UserClient {
     @PostMapping("/users/list")
     List<UserDto> getUsers(@RequestBody LinkedList<Long> usersId);
