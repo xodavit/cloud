@@ -1,13 +1,13 @@
 ### Without Gateway
 
-http://localhost:9002/value
+http://localhost:9002/api/value
 
 ### With Gateway
 
-http://localhost:9000/aggregator/value
+http://localhost:9000/aggregator/api/value
 
 ### With Token & Gateway
 
-http://localhost:9000/aggregator/value
+http://localhost:9000/aggregator/api/value
 Authorization: top-secret
 
