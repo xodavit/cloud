@@ -46,3 +46,17 @@ services:
       - 9993:9993
     depends_on:
       - zookeeper
+  db:
+    image: postgres:13-alpine3.14
+    command: [ "postgres", "-c", "log_statement=all" ]
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=db
+      - POSTGRES_USER=app
+      - POSTGRES_PASSWORD=pass
+    volumes:
+      - ./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d:ro
+    depends_on:
+      - kafka1
+
