@@ -1,13 +1,26 @@
 ### Without Gateway
-
 http://localhost:9002/api/value
 
 ### With Gateway
-
 http://localhost:9000/aggregator/api/value
 
 ### With Token & Gateway
-
 http://localhost:9000/aggregator/api/value
 Authorization: top-secret
 
+### Get all users
+GET http://localhost:9000/aggregator/api/users
+
+### Get payments stats
+GET http://localhost:9000/aggregator/api/payments
+
+### Register new payment
+POST http://localhost:9000/producer/api/payments
+Content-Type: application/json
+
+{
+  "type" : "payment",
+  "senderId": "1",
+  "amount": "1000",
+  "comment": "xodavit Hello"
+}
