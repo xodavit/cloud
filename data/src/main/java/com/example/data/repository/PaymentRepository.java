@@ -4,7 +4,6 @@ import com.example.data.entity.Payment;
 import lombok.RequiredArgsConstructor;
 import org.hibernate.Session;
 import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
 
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
