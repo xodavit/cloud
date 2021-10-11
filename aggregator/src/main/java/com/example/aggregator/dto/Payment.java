@@ -7,6 +7,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class ResponseDto {
-    private String id;
+public class Payment implements Payload {
+    private long id;
+    private long senderId;
+    private long amount;
+    private String comment;
 }

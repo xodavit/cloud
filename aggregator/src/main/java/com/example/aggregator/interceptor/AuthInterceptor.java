@@ -5,9 +5,9 @@ import feign.RequestTemplate;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Component;
-import org.springframework.web.context.request.RequestContextHolder;
 
 import javax.servlet.http.HttpServletRequest;
+
 
 @Component
 @RequiredArgsConstructor

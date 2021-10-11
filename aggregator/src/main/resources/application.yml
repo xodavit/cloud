@@ -6,6 +6,7 @@ spring:
     name: aggregator
 server:
   port: 9002
+#  port: 0
 feign:
   circuitbreaker:
     enabled: true
