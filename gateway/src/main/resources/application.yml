@@ -1,3 +1,5 @@
+#services:
+#  emancipated: users
 spring:
   cloud:
     zookeeper:
